@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Charity Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showForm('donor')">Add Donor</a></li>
+                    <li><a href="#" onclick="showForm('donation')">Add Donation</a></li>
+                    <li><a href="#" onclick="showForm('volunteer')">Add Volunteer</a></li>
+                    <li><a href="#" onclick="showForm('beneficiary')">Add Beneficiary</a></li>
+                    <li><a href="#" onclick="showForm('organization')">Add Organization</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h2>Welcome to Our Charity Management System</h2>
+                <p>Manage donations, volunteers, and beneficiaries effectively.</p>
+            </section>
+
+            <section class="forms">
+                <div id="donor-form" class="form-container">
+                    <h2>Add a Donor</h2>
+                    <input type="text" id="donorName" placeholder="Donor Name" required>
+                    <input type="email" id="donorEmail" placeholder="Email" required>
+                    <input type="text" id="donorPhone" placeholder="Phone Number" required>
+                    <button class="btn" onclick="submitDonor()">Submit</button>
+                </div>
+
+                <div id="donation-form" class="form-container">
+                    <h2>Record a Donation</h2>
+                    <input type="number" id="donorId" placeholder="Donor ID" required>
+                    <input type="number" id="donationAmount" placeholder="Amount" required>
+                    <input type="date" id="donationDate" required>
+                    <button class="btn" onclick="submitDonation()">Submit</button>
+                </div>
+
+                <div id="volunteer-form" class="form-container">
+                    <h2>Add a Volunteer</h2>
+                    <input type="text" id="volunteerName" placeholder="Volunteer Name" required>
+                    <input type="email" id="volunteerEmail" placeholder="Email" required>
+                    <input type="text" id="volunteerPhone" placeholder="Phone Number" required>
+                    <button class="btn" onclick="submitVolunteer()">Submit</button>
+                </div>
+
+                <div id="beneficiary-form" class="form-container">
+                    <h2>Add a Beneficiary</h2>
+                    <input type="text" id="beneficiaryName" placeholder="Beneficiary Name" required>
+                    <input type="text" id="beneficiaryDetails" placeholder="Details" required>
+                    <button class="btn" onclick="submitBeneficiary()">Submit</button>
+                </div>
+
+                <div id="organization-form" class="form-container">
+                    <h2>Add an Organization</h2>
+                    <input type="text" id="orgName" placeholder="Organization Name" required>
+                    <input type="text" id="orgContact" placeholder="Contact Info" required>
+                    <button class="btn" onclick="submitOrganization()">Submit</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

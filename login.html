@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Management - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Welcome to Charity Management</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <p id="loginError" class="error-message"></p>
+    </div>
+
+    <div class="dashboard" id="dashboard" style="display: none;">
+        <h2>Dashboard</h2>
+        <div class="actions">
+            <button onclick="navigateTo('donors')">Manage Donors</button>
+            <button onclick="navigateTo('organizations')">Manage Organizations</button>
+            <button onclick="navigateTo('donations')">Manage Donations</button>
+            <button onclick="navigateTo('volunteers')">Manage Volunteers</button>
+            <button onclick="navigateTo('expenses')">Track Expenses</button>
+            <button onclick="navigateTo('events')">Manage Events</button>
+            <button onclick="navigateTo('beneficiaries')">Manage Beneficiaries</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
