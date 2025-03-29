@@ -9,7 +9,10 @@ Beneficiary Records: Keep track of beneficiaries and their details.
 Organization Info: Manage partner organizations.
 Interactive UI: User-friendly interface with real-time feedback.
 
-🛠️ Tech Stack
+🛠️ Tech Stack:
+
 Frontend: HTML, CSS, JavaScript
+
 Backend: Node.js, Express
+
 Database: MySQL
