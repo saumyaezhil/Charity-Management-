@@ -1,6 +1,7 @@
 A simple and easy-to-use Charity Management system to keep track of donors, donations, volunteers, beneficiaries, and organizations. Perfect for managing everything in one place!
 
-🌟 Features
+🌟 Features :
+
 Donor Management: Add and track donor information.
 Donation Tracking: Record and manage donations with date and amount.
 Volunteer Management: Register and manage volunteers.
